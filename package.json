@@ -1,0 +1,37 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./index",
+    "test": "./node_modules/.bin/jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.3",
+    "@types/node": "^7.0.18",
+    "@types/path-to-regexp": "^1.7.0",
+    "jest": "^20.0.1",
+    "ts-jest": "^20.0.3",
+    "ts-node": "^3.0.4",
+    "typescript": "^2.3.2"
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.spec.json"
+    },
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "dependencies": {
+    "path-to-regexp": "^1.7.0"
+  }
+}
